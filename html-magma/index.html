@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+    <title>Magma - рекламное агентство полного цикла</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/easySlider1.7.js"></script>
+    <script type="text/javascript" src="js/bootstrap-transition.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tab.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+</head>
+<body>
+    <div class="oldIE">
+        <div class="oldIE-closeBtn" title="Закрыть">&#9762;</div>
+        "I'm your lovely IE8!!!"
+    </div>
+    <script type="text/javascript">
+        var sAppVersion = window.navigator.appVersion;
+            
+        if (sAppVersion.indexOf("MSIE 8.0") > -1) {
+            setTimeout(function(){
+                $(".oldIE").slideDown(500);
+                $(".oldIE-closeBtn").on("click", function(){ $(".oldIE").slideUp(300); });
+            }, 2500);
+        } 
+    </script>
+    <div class="container">
+        <header>
+            <a href="#" class="logo" title="На главную"></a>
+            <nav class="mainMenu clear">
+                <a href="#">Портфолио</a>
+                <a href="#" class="selected">Услуги и цены</a>
+                <a href="#">Материалы</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <div class="contactsTop">
+                <ul class="phoneTabs">
+                    <li style="left: 12px;" class="active"><a href="#m_phone" data-toggle="tab">Москва</a></li>
+                    <li style="right: 0px;" class=""><a href="#spb_phone" data-toggle="tab">Санкт-Петербург</a></li>
+                </ul>
+                <div class="phoneTabsContent tab-content">
+                    <div class="tab-pane fade active in" id="m_phone">
+                        +7 (499) 638-47-05
+                    </div>
+                    <div class="tab-pane fade" id="spb_phone">
+                        +7 (812) 738-07-08
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="slider">
+            <div class="slideCaption-static">Нам есть что показать!</div>
+            <ul>
+                <li>
+                    <a href="#" class="slideCaption">
+                        <span>Кейс</span><br>
+                        <span>ДЛЯ КРУПНЕЙШЕЙ</span><br>
+                        <span>компании в области</span><br>
+                        <span>противопожарной</span><br>
+                        <span>защиты</span>
+                    </a>
+                    <img src="content_img/slide01.jpg" alt="">
+                </li>
+                <li>
+                    <a href="#" class="slideCaption">
+                        <span>Кейс</span><br>
+                        <span>ДЛЯ КРУПНЕЙШЕЙ</span><br>
+                        <span>компании в области</span><br>
+                        <span>противопожарной</span><br>
+                        <span>защиты</span>
+                    </a>
+                    <img src="content_img/slide02.jpg" alt="">
+                </li>
+                <li>
+                    <a href="#" class="slideCaption">
+                        <span>Кейс</span><br>
+                        <span>ДЛЯ КРУПНЕЙШЕЙ</span><br>
+                        <span>компании в области</span><br>
+                        <span>противопожарной</span><br>
+                        <span>защиты</span>
+                    </a>
+                    <img src="_content_img/slide03.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+        
+        <section class="services">
+            <div class="servicesWrapper">
+                <h1 class="indexH1">Мы можем <a href="#">предложить всё</a>, <br><span>что сделает вас лидером рынка:</span></h1>
+                <ul class="list-of-services">
+                    <li>рост объемов продаж и прибыли;</li>
+                    <li>увеличение числа клиентов;</li>
+                    <li>расширение аудитории;</li>
+                    <li>повышение лояльности;</li>
+                    <li>узнаваемость бренда.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="clear">
+            <section class="news">
+                <h2 class="indexH2">Есть о чём рассказать...</h2>
+                <div class="newsWrapper">
+                    <section class="newsItem clear">
+                        <div class="newsItemImage">
+                            <img src="content_img/social_games.jpg" alt="">
+                            <a href="#" class="newsItemImageShadow">&nbsp;</a>
+                        </div>
+                        <div class="newsRightPart">
+                            <h3 class="newsItemTitle">
+                                <a href="#">Социальные игры как бизнес-инструмент и способ развлечения & fade me out...</a>
+                                <span class="fadeOut">&nbsp;</span>
+                            </h3>
+                            <a href="#" class="newsTag">социальные сети</a>
+                            <div class="newsItemDate">21 января 2013</div>
+                        </div>
+                    </section>
+                    <section class="newsItem clear">
+                        <div class="newsItemImage">
+                            <img src="content_img/usability.jpg" alt="">
+                            <a href="#" class="newsItemImageShadow">&nbsp;</a>
+                        </div>
+                        <div class="newsRightPart">
+                            <h3 class="newsItemTitle">
+                                <a href="#">Социальные игры как бизнес-инструмент и способ развлечения</a>
+                                <span class="fadeOut">&nbsp;</span>
+                            </h3>
+                            <a href="#" class="newsTag">юзабилити</a>
+                            <a href="#" class="newsTag">метка раз</a>
+                            <a href="#" class="newsTag">и метка два</a>
+                            <div class="newsItemDate">15 января 2013</div>
+                        </div>
+                    </section>
+                    <section class="newsItem clear">
+                        <div class="newsItemImage">
+                            <img src="content_img/social_net.jpg" alt="">
+                            <a href="#" class="newsItemImageShadow">&nbsp;</a>
+                        </div>
+                        <div class="newsRightPart">
+                            <h3 class="newsItemTitle">
+                                <a href="#">ВКонтакте: на сколько жива коммерция внутри социальной сети?</a>
+                                <span class="fadeOut">&nbsp;</span>
+                            </h3>
+                            <a href="#" class="newsTag">социальные сети</a>
+                            <div class="newsItemDate">23 декабря 2012</div>
+                        </div>
+                    </section>
+                </div>
+            </section><!-- /news -->
+
+            <section class="social clear">
+                <h2 class="indexH2">и где поболтать ;)</h2>
+                <ul class="socialTabs clear">
+                    <li class="active"><a href="#vk_tab" data-toggle="tab">ВКонтакте</a></li>
+                    <li class=""><a href="#fb_tab" data-toggle="tab">Facebook</a></li>
+                </ul>
+                <div class="socialTabsContent tab-content">
+                    <div class="tab-pane fade active in" id="vk_tab">
+                        <img src="content_img/vk_group.jpg" alt="">
+                    </div>
+                    <div class="tab-pane fade" id="fb_tab">
+                        facebook group
+                    </div>
+                </div>
+                <p>можно еще заглянуть сюда:</p>
+                <div class="socialIcons clear">
+                    <a href="http://plus.google.com/" target="_blank" class="gPlusGrp"><img src="images/dummy.gif" alt=""/></a>
+                    <a href="http://www.linkedin.com/" target="_blank" class="linkedInGrp"><img src="images/dummy.gif" alt=""/></a>
+                    <a href="http://twitter.com" target="_blank" class="twitterGrp"><img src="images/dummy.gif" alt=""/></a>
+                    <a href="http://dribbble.com/" target="_blank" class="drbGrp"><img src="images/dummy.gif" alt=""/></a>
+                    <a href="http://www.behance.net/" target="_blank" class="beGrp"><img src="images/dummy.gif" alt=""/></a>
+                    <a href="http://www.flickr.com/" target="_blank" class="flickrGrp"><img src="images/dummy.gif" alt=""/></a>
+                </div>
+            </section><!-- /social -->
+        </div>
+        
+        <footer>
+            <div class="innerFooter">
+                <p>
+                    © 2013. Magma - рекламное агентство полного цикла
+                </p>
+                <div class="footerWrapper">
+                    <p>
+                        Разработка сайта, продвижение в поисковиках и социальных сетях
+                        <br>Создание и продвижение бренда
+                    </p>
+                    <div class="footerLeft">
+                        <p>Всегда на связи:</p>
+                        <div style="line-height: 16px;">
+                            <span class="phoneIcon">8 (800) 200-08-08</span>
+                            <span class="emailIcon"><a href="mailto:info@magmaidea.ru">info@magmaidea.ru</a></span>
+                            <span class="skypeIcon"><a href="skype:magma.idea?chat">magma.idea</a></span>
+                        </div>
+                    </div>
+                    <div class="footerCenter">
+                        <p>Мы в соцсетях:</p>
+                        <div class="socialIcons2 clear">
+                            <a href="http://vk.com/" target="_blank" class="vkGrp"><img src="images/dummy.gif" alt=""/></a>
+                            <a href="http://facebook.com/" target="_blank" class="fbookGrp"><img src="images/dummy.gif" alt=""/></a>
+                            <a href="http://plus.google.com/" target="_blank" class="gPlusGrp"><img src="images/dummy.gif" alt=""/></a>
+                            <a href="http://www.linkedin.com/" target="_blank" class="linkedInGrp"><img src="images/dummy.gif" alt=""/></a>
+                            <a href="http://twitter.com" target="_blank" class="twitterGrp"><img src="images/dummy.gif" alt=""/></a>
+                            <a href="http://dribbble.com/" target="_blank" class="drbGrp"><img src="images/dummy.gif" alt=""/></a>
+                            <a href="http://www.behance.net/" target="_blank" class="beGrp"><img src="images/dummy.gif" alt=""/></a>
+                            <a href="http://www.flickr.com/" target="_blank" class="flickrGrp"><img src="images/dummy.gif" alt=""/></a>
+                        </div>
+                    </div>
+                    <div class="footerRight">
+                        <a href="#" class="makeOrder">Оформить заявку!</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div><!-- /container -->
+</body>
+</html>
